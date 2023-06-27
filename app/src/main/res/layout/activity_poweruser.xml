@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".Poweruser">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="31dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Power User"
+            android:textColor="#ED7421"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:text="Registration "
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_power" />
+
+        <EditText
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="Name"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register" />
+
+        <EditText
+            android:id="@+id/tv_nameofco"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="Name of the co-oprative"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+
+
+        <EditText
+            android:id="@+id/tv_mobile"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="mobile"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/tv_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nameofco" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="email"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_mobile"
+            app:layout_constraintTop_toBottomOf="@id/tv_nameofco" />
+
+        <EditText
+            android:id="@+id/tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="Area"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mobile" />
+
+
+
+
+        <EditText
+            android:id="@+id/tv_city"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="mobile"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/tv_state"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_area" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/tv_state"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="email"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_city"
+            app:layout_constraintTop_toBottomOf="@id/tv_area" />
+
+
+
+        <EditText
+            android:id="@+id/tv_pass"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="password"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cpass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_city" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/tv_cpass"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="confirm password"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_pass"
+            app:layout_constraintTop_toBottomOf="@id/tv_city" />
+
+
+        <Spinner
+            android:id="@+id/spinnerone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:entries="@array/select_profession"
+            android:dropDownSelector="@drawable/arrow_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cpass" />
+
+        <Spinner
+            android:id="@+id/spinnertwo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:entries="@array/select_income"
+            android:dropDownSelector="@drawable/arrow_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerone" />
+
+
+        <EditText
+            android:id="@+id/tv_sociallink"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="social media link"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnertwo" />
+
+
+        <EditText
+            android:id="@+id/tv_gst"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="GST number"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sociallink" />
+
+        <EditText
+            android:id="@+id/tv_pan"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="PAN number"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gst" />
+
+
+        <EditText
+            android:id="@+id/tv_add"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_box_white"
+            android:ems="10"
+            android:hint="Adress"
+            android:paddingStart="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pan" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rectangle_orange"
+            android:text="ADD"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

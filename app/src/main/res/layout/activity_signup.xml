@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Signup"
+        android:textColor="#ED7421"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/tv_name_signup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_brown"
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:hint="Full name"
+        android:maxLength="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_signup"
+            android:drawableStart="@drawable/person_icon"
+            android:drawablePadding="10dp"
+
+             />
+
+
+
+
+    <EditText
+        android:id="@+id/tv_mobile_signup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingStart="15dp"
+        android:background="@drawable/rectangle_brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_signup"
+
+            android:drawableStart="@drawable/mobile_icon"
+            android:drawablePadding="10dp"
+            android:hint="Mobile number" />
+
+
+
+
+    <EditText
+        android:id="@+id/tv_password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mobile_signup"
+        android:background="@drawable/rectangle_brown"
+            android:drawableStart="@drawable/password_icon"
+            android:drawablePadding="10dp"
+            android:hint="Password" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="#ED7421"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password_signup" />
+
+
+    <TextView
+        android:id="@+id/tv_for_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#ED7421"
+        android:textSize="14dp"
+       android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Already have an Account"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_signup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
